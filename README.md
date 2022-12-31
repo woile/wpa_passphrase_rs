@@ -12,6 +12,7 @@ to provision the raspberries from any Unix OS.
 ## Usage
 
 With nix:
+
 ```sh
 nix shell 'github:woile/wpa_passphrase_rs'
 ```
@@ -20,6 +21,14 @@ Then it will be available in your shell
 
 ```sh
 wpa_passphrase [ ssid ] [ passphrase ]
+```
+
+## Development
+
+After making and commiting changes, remember to run
+
+```sh
+nix flake update
 ```
 
 ## Resources
