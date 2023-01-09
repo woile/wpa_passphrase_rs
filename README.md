@@ -9,19 +9,22 @@ to provision the raspberries from any Unix OS.
 
 ## Installation
 
-## Usage
-
-With nix:
-
 ```sh
-nix shell 'github:woile/wpa_passphrase_rs'
+nix profile install 'github:woile/wpa_passphrase_rs#wpa_passphrase'
 ```
 
-Then it will be available in your shell
+Or if you want to try it in a shell
+
+```sh
+nix shell 'github:woile/wpa_passphrase_rs#wpa_passphrase'
+```
+
+## Usage
 
 ```sh
 wpa_passphrase [ ssid ] [ passphrase ]
 ```
+
 
 ## Development
 
